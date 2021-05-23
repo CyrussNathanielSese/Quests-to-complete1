@@ -6,10 +6,10 @@ namespace Quests_to_complete1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to your Quests Tp Complete!");
+            Console.WriteLine("Welcome to your Quests To Complete!");
             Console.WriteLine("(press any key to continue)");
             Console.ReadKey();
-            Console.Clear();
+            Console.WriteLine("--------------------------------------------");
             intro1();
 
 
@@ -18,7 +18,7 @@ namespace Quests_to_complete1
         {
             Console.WriteLine("Do you want to look to your Quests for today?");
             Console.Write("Answer:"); string response1 = Console.ReadLine().ToLower();
-            Console.WriteLine("______________________________________________________");
+            Console.WriteLine("--------------------------------------------");
             if (response1 == "yes")
             {
                 Console.WriteLine("");
