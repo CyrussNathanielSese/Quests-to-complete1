@@ -30,20 +30,25 @@ namespace Quests_to_complete1
             
 
             Console.WriteLine("Do you want to look to your Quests for today?");
+            Console.WriteLine("(please type 'yes' or 'no' to continue)");
             Console.Write("Answer:"); string response1 = Console.ReadLine().ToLower();
-            Console.WriteLine("--------------------------------------------");
             string yes1 = "yes";
             string no1 = "no";
 
-            while (response1 != yes1 && response1 != no1)
+            while (response1 != yes1 && response1 != no1)//If the user type anything else aside from 'yes' or 'no', he/she will be asked to write the specific line.
             {
                 Console.WriteLine("please enter a correct command");
+                Console.WriteLine("(please type 'yes' or 'no' to continue)");
                 Console.Write("Response:"); response1 = Console.ReadLine().ToLower();
             }
 
 
             if (response1 == "yes")//if the user say 'yes', the program will show the quests below
             {
+                Console.WriteLine("----------------------------------------------------------------");
+                Console.WriteLine("----------------------------------------------------------------");
+                Console.WriteLine("----------------------------------------------------------------");
+                Console.WriteLine("What do you want to do to this Quest?\n");
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below
                 Console.WriteLine("A." + quests1);
                 Console.WriteLine("B." + quests2);
@@ -75,7 +80,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.Write("Quests: A."); Console.WriteLine(quests1 + "\n");
-                    Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
+                    Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
                     Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string mainmenu = "mainmenu";
@@ -250,7 +255,7 @@ namespace Quests_to_complete1
                 }
             }
 
-            else
+            else if (response1 == "no")
 
             //THE PROGRAM WILL ASK THE PERSON IF HE/SHE WANTS TO QUIT THE PROGRAM//
             {
@@ -264,6 +269,7 @@ namespace Quests_to_complete1
                 while (response2 != yes2 && response2 != no2)
                 {
                     Console.WriteLine("please enter a correct command");
+                    Console.WriteLine("(please type 'yes' or 'no' to continue)");
                     Console.Write("Response:"); response2 = Console.ReadLine().ToLower();
                 }
 
@@ -272,7 +278,7 @@ namespace Quests_to_complete1
                     exitpanel();
                 }
 
-                else
+                else if (response2 == "no")
                 {
                     Console.Clear();
                     intro1();
