@@ -7,36 +7,38 @@ namespace Quests_to_complete1
     {
         static void Main(string[] args)
         {
+            //INTRODUCTION//
             Console.WriteLine("Welcome to your Quests To Complete!");
             Console.WriteLine("(press any key to continue)\n");
             Console.ReadKey();
             Console.WriteLine("Can I get your name?"); //the user will be asked to comment his/her name.
             Console.WriteLine("Please enter your name below...");
-
+            //THE USER WILL BE ABLE TO PUT HIS/HER NAME BELOW//
             Console.Write("Name:"); string name1 = Console.ReadLine();
             Console.WriteLine("--------------------------------------------");
             intro1();
-
+            
 
         }
         public static void intro1()
         {
             string[] quests = { "Do the Dishes", "Clean the House","(empty quest)", "(empty quest)", "(empty quest)", };
-
-
+            //THERE WILL BE A DEFAULT LIST OF QUESTS THAT WILL BE SHOWN//
+            //THE DEFAULT QUESTS ARE LISTED IN AN ARRAY
             
 
             Console.WriteLine("Do you want to look to your Quests for today?");
-            Console.WriteLine("(please type 'yes' or 'no' to continue)");
+            Console.WriteLine("(please type 'yes' or 'no' to continue)");//There will be two choices for this part
             Console.Write("Answer:"); string response1 = Console.ReadLine().ToLower();
             string yes1 = "yes";
             string no1 = "no";
 
-            while (response1 != yes1 && response1 != no1)//If the user type anything else aside from 'yes' or 'no', he/she will be asked to write the specific line.
+            while (response1 != yes1 && response1 != no1)//If the user type anything else aside from 'yes' or 'no', he/she will be asked to write a right command.
             {
                 Console.WriteLine("please enter a correct command");
                 Console.WriteLine("(please type 'yes' or 'no' to continue)");
                 Console.Write("Response:"); response1 = Console.ReadLine().ToLower();
+                //THIS LOOP WILL BE REPEATED ONCE THE USER DID NOT TYPE 'YES' OR 'NO'//
             }
 
 
@@ -46,7 +48,7 @@ namespace Quests_to_complete1
                 Console.WriteLine("----------------------------------------------------------------");
                 Console.WriteLine("----------------------------------------------------------------");
                 Console.WriteLine("What do you want to do to this Quest?\n");
-                Console.WriteLine("These are your Quests for today...");//lists of quests are shown below
+                Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
                 Console.WriteLine("A." + quests[0]);
                 Console.WriteLine("B." + quests[1]);
                 Console.WriteLine("C." + quests[2]);
@@ -117,7 +119,11 @@ namespace Quests_to_complete1
                         intro1();
                     }
                            
-                }
+                } 
+                ///////     ///////    /////////   //////    //     //   //////              //////////  //   //   //////  /////
+                //   //     //        //  //  //   //  //     //   //    //                      //      ///////     //    //
+                /////       ///        // //  //   //  //      // //     ///                     //      //   //     //      ///
+                //  ///     ////////   //     //   //////       ///      ///////                 //      //   //     //    /////
                 if (command1 == "b")
                 {
                     Console.WriteLine("----------------------------------------------------------------");
@@ -299,7 +305,7 @@ namespace Quests_to_complete1
 
 
 
-        //THESE STATEMENTS WILL BE SHOWN WHEN THE USER CHOSE TO QUIT THE PROGRAM//
+        //THESE STATEMENTS BELOW WILL BE SHOWN WHEN THE USER CHOSE TO QUIT THE PROGRAM//
         public static void exitpanel()
         {
             Console.Clear();
