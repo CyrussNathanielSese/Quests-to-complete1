@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 
 namespace Quests_to_complete1
@@ -17,15 +17,15 @@ namespace Quests_to_complete1
             Console.Write("Name:"); string name1 = Console.ReadLine();
             Console.WriteLine("--------------------------------------------");
             intro1();
-            
+
 
         }
         public static void intro1()
         {
-            string[] quests = { "Do the Dishes", "Clean the House","(empty quest)", "(empty quest)", "(empty quest)", };
+            string[] quests = { "Do the Dishes", "Clean the House", "", "", "", };
             //THERE WILL BE A DEFAULT LIST OF QUESTS THAT WILL BE SHOWN//
             //THE DEFAULT QUESTS ARE LISTED IN AN ARRAY
-            
+
 
             Console.WriteLine("Do you want to look to your Quests for today?");
             Console.WriteLine("(please type 'yes' or 'no' to continue)");//There will be two choices for this part
@@ -65,7 +65,7 @@ namespace Quests_to_complete1
                 string d = "d";
                 string e = "e";
                 //THE USER NEEDS TO TYPE THE EXACT LETTER OF THE QUEST IN ORDER TO GO TO THAT QUESTS'S COMMANDS//
-                while (command1 != a && command1 != b && command1 != c && command1 != d && command1  != e)
+                while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e)
                 {
                     Console.WriteLine("(Please enter a valid letter)");
                     Console.Write("Command:"); command1 = Console.ReadLine().ToLower(); //THE USER WILL BE ASKED REPEATEDLY TO TYPE THE SPECIFIC LETTER OF QUEST"
@@ -88,7 +88,7 @@ namespace Quests_to_complete1
                     while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit)
                     {
                         Console.WriteLine("Please comment a valid command");
-                        Console.Write("Command:"); commandanswer1 = Console.ReadLine();
+                        Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
                     }
                     //
                     //
@@ -115,11 +115,12 @@ namespace Quests_to_complete1
                         Console.WriteLine("----------------------------------------------------------------");
                         Console.WriteLine("----------------------------------------------------------------");
                         Console.WriteLine("Edit Complete");
+                        Console.Write("New Quest:"); Console.WriteLine(quests[0]);
                         Console.WriteLine("(press enter to continue)");
                         intro1();
                     }
-                           
-                } 
+
+                }
                 ///////     ///////    /////////   //////    //     //   //////              //////////  //   //   //////  /////
                 //   //     //        //  //  //   //  //     //   //    //                      //      ///////     //    //
                 /////       ///        // //  //   //  //      // //     ///                     //      //   //     //      ///
@@ -140,7 +141,7 @@ namespace Quests_to_complete1
                     while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit)
                     {
                         Console.WriteLine("Please comment a valid command");
-                        Console.Write("Command:"); commandanswer1 = Console.ReadLine();
+                        Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
                     }
                     //
                     //
@@ -157,6 +158,18 @@ namespace Quests_to_complete1
                         Console.WriteLine("(press any key to continue)");
                         Console.ReadKey();
                         Console.Clear();
+                        intro1();
+                    }
+                    else if (commandanswer1 == "edit")
+                    {
+                        Console.WriteLine("Please enter your new quest below...");
+                        Console.Write("New Quest:"); quests[1] = Console.ReadLine();
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("Edit Complete");
+                        Console.Write("New Quest:"); Console.WriteLine(quests[1]);
+                        Console.WriteLine("(press enter to continue)");
                         intro1();
                     }
                 }
@@ -176,7 +189,7 @@ namespace Quests_to_complete1
                     while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit)
                     {
                         Console.WriteLine("Please comment a valid command");
-                        Console.Write("Command:"); commandanswer1 = Console.ReadLine();
+                        Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
                     }
                     //
                     //
@@ -193,6 +206,18 @@ namespace Quests_to_complete1
                         Console.WriteLine("(press any key to continue)");
                         Console.ReadKey();
                         Console.Clear();
+                        intro1();
+                    }
+                    else if (commandanswer1 == "edit")
+                    {
+                        Console.WriteLine("Please enter your new quest below...");
+                        Console.Write("New Quest:"); quests[2] = Console.ReadLine();
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("Edit Complete");
+                        Console.Write("New Quest:"); Console.WriteLine(quests[2]);
+                        Console.WriteLine("(press enter to continue)");
                         intro1();
                     }
                 }
@@ -212,7 +237,7 @@ namespace Quests_to_complete1
                     while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit)
                     {
                         Console.WriteLine("Please comment a valid command");
-                        Console.Write("Command:"); commandanswer1 = Console.ReadLine();
+                        Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
                     }
                     //
                     //
@@ -229,6 +254,18 @@ namespace Quests_to_complete1
                         Console.WriteLine("(press any key to continue)");
                         Console.ReadKey();
                         Console.Clear();
+                        intro1();
+                    }
+                    else if (commandanswer1 == "edit")
+                    {
+                        Console.WriteLine("Please enter your new quest below...");
+                        Console.Write("New Quest:"); quests[3] = Console.ReadLine();
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("Edit Complete");
+                        Console.Write("New Quest:"); Console.WriteLine(quests[3]);
+                        Console.WriteLine("(press enter to continue)");
                         intro1();
                     }
                 }
@@ -265,6 +302,18 @@ namespace Quests_to_complete1
                         Console.WriteLine("(press any key to continue)");
                         Console.ReadKey();
                         Console.Clear();
+                        intro1();
+                    }
+                    else if (commandanswer1 == "edit")
+                    {
+                        Console.WriteLine("Please enter your new quest below...");
+                        Console.Write("New Quest:"); quests[4] = Console.ReadLine().ToLower();
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.WriteLine("Edit Complete");
+                        Console.Write("New Quest:"); Console.WriteLine(quests[4]);
+                        Console.WriteLine("(press enter to continue)");
                         intro1();
                     }
                 }
@@ -314,3 +363,4 @@ namespace Quests_to_complete1
         }
     }
 }
+          
