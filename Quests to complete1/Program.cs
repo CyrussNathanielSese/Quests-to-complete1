@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Collections.Generic;
 
@@ -16,33 +16,13 @@ namespace Quests_to_complete1
             Console.WriteLine("--------------------------------------------");
             Console.ReadKey();
             Console.WriteLine("Can I get your name?"); //the user will be asked to comment his/her name.
-            Console.Write("Response:"); string NameResponse1 = Console.ReadLine().ToLower();
-            string nameResponse = "yes";
-            string nameResponse2 = "no";
-            while (NameResponse1 != nameResponse && NameResponse1 != nameResponse2)
-            {
-                Console.WriteLine("please enter a correct command");
-                Console.WriteLine("(please type 'yes' or 'no' to continue)");
-                Console.Write("Response:"); NameResponse1 = Console.ReadLine().ToLower();
-            }
-            if (NameResponse1 == "yes")
-            {
-                Console.Clear();
-                Console.WriteLine("--------------------------------------------");
-                Console.WriteLine("--------------------------------------------");
-                Console.WriteLine("--------------------------------------------");
-                Console.WriteLine("Please enter your name below...");
-                //THE USER WILL BE ABLE TO PUT HIS/HER NAME BELOW//
-                Console.Write("Name:"); string name1 = Console.ReadLine();
-                Console.WriteLine("Thank you for putting your name! Now you can procceed to your Quests!");
-                Console.WriteLine("--------------------------------------------");
-                intro1();
-            }
-            else if (NameResponse1 == "no")
-            {
-                Console.Clear();
-                intro1();
-            }
+            Console.WriteLine("Please enter your name below...");
+            //THE USER WILL BE ABLE TO PUT HIS/HER NAME BELOW//
+            Console.Write("Name:"); string name1 = Console.ReadLine();
+            Console.WriteLine("--------------------------------------------");
+            intro1();
+            
+
         }
         public static void intro1()
         {
@@ -181,18 +161,6 @@ namespace Quests_to_complete1
                         Console.WriteLine("(press any key to continue)");
                         Console.ReadKey();
                         Console.Clear();
-                        intro1();
-                    }
-                    else if (commandanswer1 == "edit")
-                    {
-                        Console.WriteLine("Please enter your new quest below...");
-                        Console.Write("New Quest:"); quests[1] = Console.ReadLine();
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("Edit Complete");
-                        Console.Write("New Quest:"); Console.WriteLine(quests[1]);
-                        Console.WriteLine("(press enter to continue)");
                         intro1();
                     }
                 }
