@@ -15,14 +15,13 @@ namespace Quests_to_complete1
             Console.WriteLine("(press any key to continue)");
             Console.WriteLine("--------------------------------------------");
             Console.ReadKey();
-            Console.WriteLine("Can I get your name?"); //the user will be asked to comment his/her name.
-            Console.WriteLine("Please enter your name below...");
-            //THE USER WILL BE ABLE TO PUT HIS/HER NAME BELOW//
-            Console.Write("Name:"); string name1 = Console.ReadLine();
+            Console.WriteLine("Can I get your name?"); //the user will be asked by the program if he/she wants to comment his/her name.
+            Console.WriteLine("(leave this panel blank if you do not want to put your name inside of the program)");
+            Console.Write("Response:"); Console.ReadLine();
+            Console.WriteLine("--------------------------------------------");
+            Console.WriteLine("--------------------------------------------");
             Console.WriteLine("--------------------------------------------");
             intro1();
-            
-
         }
         public static void intro1()
         {
@@ -51,7 +50,6 @@ namespace Quests_to_complete1
                 Console.WriteLine("----------------------------------------------------------------");
                 Console.WriteLine("----------------------------------------------------------------");
                 Console.WriteLine("----------------------------------------------------------------");
-                Console.WriteLine("What do you want to do to these Quests?\n");
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
                 Console.WriteLine("A." + quests[0]);
                 Console.WriteLine("B." + quests[1]);
@@ -59,7 +57,8 @@ namespace Quests_to_complete1
                 Console.WriteLine("D." + quests[3]);
                 Console.WriteLine("E." + quests[4]);
                 Console.WriteLine("Do you want to edit your quests?");
-                Console.WriteLine("Press the letter of the quest you want to edit or delete.");
+                Console.WriteLine("Type the letter of the quest you want to edit or delete.");
+                Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
                 Console.WriteLine("(example: A,a )\n");
                 Console.Write("Command:"); string command1 = Console.ReadLine().ToLower();
 
@@ -68,11 +67,16 @@ namespace Quests_to_complete1
                 string c = "c";
                 string d = "d";
                 string e = "e";
+                string exit = "exit";
                 //THE USER NEEDS TO TYPE THE EXACT LETTER OF THE QUEST IN ORDER TO GO TO THAT QUESTS'S COMMANDS//
-                while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e)
+                while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e && command1 != exit)
                 {
                     Console.WriteLine("(Please enter a valid letter)");
                     Console.Write("Command:"); command1 = Console.ReadLine().ToLower(); //THE USER WILL BE ASKED REPEATEDLY TO TYPE THE SPECIFIC LETTER OF QUEST"
+                }
+                if (command1 == "exit")
+                {
+                    exitpanel();
                 }
 
 
@@ -89,7 +93,8 @@ namespace Quests_to_complete1
                     string mainmenu = "mainmenu";
                     string remove = "remove";
                     string edit = "edit";
-                    while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit)
+                    
+                    while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != exit)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
@@ -112,16 +117,10 @@ namespace Quests_to_complete1
                         intro1();
                     }
                     else if (commandanswer1 == "edit")
-                    {
-                        Console.WriteLine("Please enter your new quest below...");
-                        Console.Write("New Quest:"); quests[0] = Console.ReadLine();
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("Edit Complete");
-                        Console.Write("New Quest:"); Console.WriteLine(quests[0]);
-                        Console.WriteLine("(press enter to continue)");
+                    { 
+                        Updated1 U1 = new Updated1();
                     }
+
 
                 }
                 ///////     ///////    /////////   //////    //     //   //////              //////////  //   //   //////  /////
