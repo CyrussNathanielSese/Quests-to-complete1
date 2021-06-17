@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Quests_to_complete1
 {
-    class Program
+    class MainProgram
     {
         static void Main(string[] args)
         {
@@ -16,16 +16,17 @@ namespace Quests_to_complete1
             Console.WriteLine("--------------------------------------------");
             Console.ReadKey();
             Console.WriteLine("Can I get your name?"); //the user will be asked by the program if he/she wants to comment his/her name.
-            Console.WriteLine("(leave this panel blank if you do not want to put your name inside of the program)");
+            Console.WriteLine("(leave this panel blank if you do not want to put your name inside of the program)"); Console.WriteLine("\nPress enter to continue");
             Console.Write("Response:"); Console.ReadLine();
-            Console.WriteLine("--------------------------------------------");
+
+            Console.WriteLine("\n--------------------------------------------");
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine("--------------------------------------------");
             intro1();
         }
         public static void intro1()
         {
-            string[] quests = { "Do the Dishes", "Clean the House", "", "", "", };
+            string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
             //THERE WILL BE A DEFAULT LIST OF QUESTS THAT WILL BE SHOWN//
             //THE DEFAULT QUESTS ARE LISTED IN AN ARRAY
 
@@ -118,15 +119,12 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     { 
-                        Updated1 U1 = new Updated1();
+                        UpdatedQuestA0 A0 = new UpdatedQuestA0();
                     }
 
 
                 }
-                ///////     ///////    /////////   //////    //     //   //////              //////////  //   //   //////  /////
-                //   //     //        //  //  //   //  //     //   //    //                      //      ///////     //    //
-                /////       ///        // //  //   //  //      // //     ///                     //      //   //     //      ///
-                //  ///     ////////   //     //   //////       ///      ///////                 //      //   //   /////  /////
+
                 if (command1 == "b")
                 {
                     Console.WriteLine("----------------------------------------------------------------");
@@ -161,6 +159,10 @@ namespace Quests_to_complete1
                         Console.ReadKey();
                         Console.Clear();
                         intro1();
+                    }
+                    else if (commandanswer1 == "edit")
+                    {
+                        UpdatedQuestB1 B1 = new UpdatedQuestB1();
                     }
                 }
                 if (command1 == "c")
@@ -200,17 +202,13 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     {
-                        Console.WriteLine("Please enter your new quest below...");
-                        Console.Write("New Quest:"); quests[2] = Console.ReadLine();
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("Edit Complete");
-                        Console.Write("New Quest:"); Console.WriteLine(quests[2]);
-                        Console.WriteLine("(press enter to continue)");
-                        intro1();
+                        UpdatedQuestC2 C2 = new UpdatedQuestC2();
                     }
                 }
+                ///////     ///////    /////////   //////    //     //   //////              //////////  //   //   //////  /////
+                //   //     //        //  //  //   //  //     //   //    //                      //      ///////     //    //
+                /////       ///        // //  //   //  //      // //     ///                     //      //   //     //      ///
+                //  ///     ////////   //     //   //////       ///      ///////                 //      //   //   /////  /////
                 if (command1 == "d")
                 {
                     Console.WriteLine("----------------------------------------------------------------");
@@ -248,15 +246,7 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     {
-                        Console.WriteLine("Please enter your new quest below...");
-                        Console.Write("New Quest:"); quests[3] = Console.ReadLine();
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("Edit Complete");
-                        Console.Write("New Quest:"); Console.WriteLine(quests[3]);
-                        Console.WriteLine("(press enter to continue)");
-                        intro1();
+                        UpdatedQuestD3 D3 = new UpdatedQuestD3();
                     }
                 }
                 if (command1 == "e")
