@@ -5,9 +5,9 @@ using System.IO;
 
 namespace Quests_to_complete1
 {
-    public class UpdatedQuestA0
+    public class UpdatedQuestE4
     {
-        public UpdatedQuestA0()
+        public UpdatedQuestE4()
         {
             intro1();
             static void intro1()
@@ -15,12 +15,12 @@ namespace Quests_to_complete1
                 string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
 
                 Console.WriteLine("Please enter your new quest below...");
-                Console.Write("New Quest:"); quests[0] = Console.ReadLine();
+                Console.Write("New Quest:"); quests[4] = Console.ReadLine();
                 Console.WriteLine("----------------------------------------------------------------");
                 Console.WriteLine("----------------------------------------------------------------");
                 Console.WriteLine("----------------------------------------------------------------");
                 Console.WriteLine("Edit Complete");
-                Console.Write("New Quest:"); Console.WriteLine(quests[0]);
+                Console.Write("New Quest:"); Console.WriteLine(quests[4]);
                 Console.WriteLine("(press enter to continue)");
                 Console.ReadKey();
 
@@ -59,13 +59,13 @@ namespace Quests_to_complete1
                 //}
 
 
-                if (command1 == "a")
+                if (command1 == "e")
                 {
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests: A."); Console.WriteLine(quests[0] + "\n");
+                    Console.Write("Quests: A."); Console.WriteLine(quests[4] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
                     Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
@@ -97,21 +97,11 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     {
-                        UpdatedQuestA0 U1 = new UpdatedQuestA0();
+                        UpdatedQuestE4 E4 = new UpdatedQuestE4();
                     }
-                    else if (commandanswer1 == "exit")
-                    {
-                        exitpanel();
-                    }
+
 
                 }
-            }
-
-            static void exitpanel()
-            {
-                Console.Clear();
-                Console.WriteLine("OK, have a good day :)");
-                Console.WriteLine("(press any key to continue)");
             }
         }
 

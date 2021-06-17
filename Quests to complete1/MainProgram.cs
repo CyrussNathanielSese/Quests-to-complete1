@@ -16,7 +16,7 @@ namespace Quests_to_complete1
             Console.WriteLine("--------------------------------------------");
             Console.ReadKey();
             Console.WriteLine("Can I get your name?"); //the user will be asked by the program if he/she wants to comment his/her name.
-            Console.WriteLine("(leave this panel blank if you do not want to put your name inside of the program)"); Console.WriteLine("\nPress enter to continue");
+            Console.WriteLine("(leave this panel blank if you do not want to put your name inside of the program)"); Console.WriteLine("\nPress enter after you put your name to continue");
             Console.Write("Response:"); Console.ReadLine();
 
             Console.WriteLine("\n--------------------------------------------");
@@ -87,12 +87,12 @@ namespace Quests_to_complete1
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests: A."); Console.WriteLine(quests[0] + "\n");
-                    Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
+                    Console.Write("Quests:A. "); Console.WriteLine(quests[0] + "\n");
+                    Console.WriteLine("(comment 'delete' if you want to remove/delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
                     Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string mainmenu = "mainmenu";
-                    string remove = "remove";
+                    string remove = "delete";
                     string edit = "edit";
                     
                     while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != exit)
@@ -108,14 +108,9 @@ namespace Quests_to_complete1
                         Console.Clear();
                         intro1();
                     }
-                    else if (commandanswer1 == "remove")
+                    else if (commandanswer1 == "delete")
                     {
-                        File.Delete(quests[0]);
-                        Console.WriteLine("Command Complete");
-                        Console.WriteLine("(press any key to continue)");
-                        Console.ReadKey();
-                        Console.Clear();
-                        intro1();
+                        DeletedQuestA0 A0 = new DeletedQuestA0();
                     }
                     else if (commandanswer1 == "edit")
                     { 
@@ -131,7 +126,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests: B."); Console.WriteLine(quests[1] + "\n");
+                    Console.Write("Quests:B. "); Console.WriteLine(quests[1] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
                     Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
@@ -171,7 +166,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests: C."); Console.WriteLine(quests[2] + "\n");
+                    Console.Write("Quests:C. "); Console.WriteLine(quests[2] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
                     Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
@@ -215,7 +210,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests: D."); Console.WriteLine(quests[3] + "\n");
+                    Console.Write("Quests:D. "); Console.WriteLine(quests[3] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
                     Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
@@ -255,7 +250,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests: E."); Console.WriteLine(quests[4] + "\n");
+                    Console.Write("Quests:E. "); Console.WriteLine(quests[4] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
                     Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
@@ -286,15 +281,7 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     {
-                        Console.WriteLine("Please enter your new quest below...");
-                        Console.Write("New Quest:"); quests[4] = Console.ReadLine().ToLower();
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("Edit Complete");
-                        Console.Write("New Quest:"); Console.WriteLine(quests[4]);
-                        Console.WriteLine("(press enter to continue)");
-                        intro1();
+                        UpdatedQuestE4 E4 = new UpdatedQuestE4();
                     }
                 }
             }
