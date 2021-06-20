@@ -6,12 +6,15 @@ namespace Quests_to_complete1
 {
     class MainProgram
     {
+        
         static void Main(string[] args)
         {
             DateTime now = DateTime.Now;
             Console.WriteLine(now.ToString());
             //INTRODUCTION//
-            Console.WriteLine("Welcome to your Quests To Complete!");
+            Console.ForegroundColor = ConsoleColor.Green; Console.WriteLine("Welcome to Quests To Complete!");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("What can you do on this application?\nThis App will be able to put your quests or things to do while you are using your computer!\nJust simply put things that ");
             Console.WriteLine("(press any key to continue)");
             Console.WriteLine("--------------------------------------------");
             Console.ReadKey();
@@ -77,7 +80,7 @@ namespace Quests_to_complete1
                 }
                 if (command1 == "exit")
                 {
-                    exitpanel();
+                    EXITPANEL EXIT = new EXITPANEL(); //When the user chose to exit the program, he will be moved into a new class which will allow the user to ge out of the program.
                 }
 
 
@@ -307,7 +310,7 @@ namespace Quests_to_complete1
 
                 if (response2 == "yes")
                 {
-                    exitpanel();
+                    EXITPANEL EXIT = new EXITPANEL();
                 }
 
                 else if (response2 == "no")
@@ -316,17 +319,6 @@ namespace Quests_to_complete1
                     intro1();
                 }
             }
-        }
-
-
-
-
-        //THESE STATEMENTS BELOW WILL BE SHOWN WHEN THE USER CHOSE TO QUIT THE PROGRAM//
-        public static void exitpanel()
-        {
-            Console.Clear();
-            Console.WriteLine("OK, have a good day :)");
-            Console.WriteLine("(press any key to continue)");
         }
     }
 }

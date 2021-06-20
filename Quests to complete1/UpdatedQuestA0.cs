@@ -105,6 +105,12 @@ namespace Quests_to_complete1
                     }
 
                 }
+
+                else if (command1 == "b")
+                {
+                    UpdatedQuestB1 B1 = new UpdatedQuestB1();
+                }
+
             }
 
             static void exitpanel()
