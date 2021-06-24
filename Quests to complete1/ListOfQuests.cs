@@ -70,7 +70,7 @@ namespace Quests_to_complete1
                     if (commandanswer1 == "mainmenu")
                     {
                         Console.Clear();
-                        MainProgram Main1 = new MainProgram();
+                        Lists();
                     }
                     else if (commandanswer1 == "delete")
                     {
@@ -78,6 +78,7 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     {
+                        Console.Clear();
                         UpdatedQuestA0 A0 = new UpdatedQuestA0();
                     }
 
@@ -121,6 +122,7 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     {
+                        Console.Clear();
                         UpdatedQuestB1 B1 = new UpdatedQuestB1();
                     }
                 }
@@ -161,6 +163,7 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     {
+                        Console.Clear();
                         UpdatedQuestC2 C2 = new UpdatedQuestC2();
                     }
                 }
@@ -205,6 +208,7 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     {
+                        Console.Clear();
                         UpdatedQuestD3 D3 = new UpdatedQuestD3();
                     }
                 }
@@ -245,6 +249,7 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     {
+                        Console.Clear();
                         UpdatedQuestE4 E4 = new UpdatedQuestE4();
                     }
                 }

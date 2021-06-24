@@ -6,8 +6,9 @@ namespace Quests_to_complete1
 {
     class MainProgram
     {
-            static void Main(string[] args)
-            {
+    
+         static void Main(string[] args)
+         {
                 Console.Title = "WELCOME";
                 DateTime now = DateTime.Now;
                 Console.WriteLine(now.ToString());
@@ -18,21 +19,21 @@ namespace Quests_to_complete1
                 Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("(Remember that if you close this program, All of the things that you put on this application will be lost)");
                 Console.ResetColor();
                 Console.WriteLine("ENJOY :)\n");
-                Console.WriteLine("(press any key to continue)");
+                Console.Write("(press any key to continue)");
                 Console.ReadKey();
                 Console.Clear();
                 intro1();
-            }
-            static void intro1()
-            {
-                //THERE WILL BE A DEFAULT LIST OF QUESTS THAT WILL BE SHOWN//
-                //THE DEFAULT QUESTS ARE LISTED IN AN ARRAY
-
+         }
+           static void intro1()
+           {
+            //THERE WILL BE A DEFAULT LIST OF QUESTS THAT WILL BE SHOWN//
+            //THE DEFAULT QUESTS ARE LISTED IN AN ARRAY
+                Console.Title = "YES OR NO?";
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Do you want to look to your Quests for today?");
-                Console.ForegroundColor = ConsoleColor.DarkBlue;
-                Console.WriteLine("(please type 'yes' or 'no' to continue)");//There will be two choices for this part
                 Console.ResetColor();
+                Console.WriteLine("(please type 'yes' or 'no' to continue)");//There will be two choices for this part
+
                 Console.Write("Answer:"); string response1 = Console.ReadLine().ToLower();
                 string yes1 = "yes";
                 string no1 = "no";
@@ -83,6 +84,6 @@ namespace Quests_to_complete1
                         intro1();
                     }
                 }
-            }
+           }
     }
 }

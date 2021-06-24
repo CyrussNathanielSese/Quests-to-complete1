@@ -9,11 +9,11 @@ namespace Quests_to_complete1
     {
         public UpdatedQuestE4()
         {
-            intro1();
-            static void intro1()
+            edit5();
+            static void edit5()
             {
                 string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
-
+                Console.Title = "Quest Slot 5";
                 Console.WriteLine("Please enter your new quest below...");
                 Console.Write("New Quest:"); quests[4] = Console.ReadLine();
                 Console.WriteLine("----------------------------------------------------------------");
@@ -23,6 +23,7 @@ namespace Quests_to_complete1
                 Console.Write("New Quest:"); Console.WriteLine(quests[4]);
                 Console.WriteLine("(press enter to continue)");
                 Console.ReadKey();
+                Console.Clear();
 
 
                 Console.WriteLine("----------------------------------------------------------------");
@@ -84,7 +85,7 @@ namespace Quests_to_complete1
                     if (commandanswer1 == "mainmenu")
                     {
                         Console.Clear();
-                        intro1();
+                        edit5();
                     }
                     else if (commandanswer1 == "remove")
                     {
@@ -93,7 +94,7 @@ namespace Quests_to_complete1
                         Console.WriteLine("(press any key to continue)");
                         Console.ReadKey();
                         Console.Clear();
-                        intro1();
+                        edit5();
                     }
                     else if (commandanswer1 == "edit")
                     {

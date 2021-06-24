@@ -9,11 +9,11 @@ namespace Quests_to_complete1
     {
         public UpdatedQuestC2()
         {
-            intro1();
-            static void intro1()
+            edit3();
+            static void edit3()
             {
                 string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
-
+                Console.Title = "Quest Slot 3";
                 Console.WriteLine("Please enter your new quest below...");
                 Console.Write("New Quest:"); quests[2] = Console.ReadLine();
                 Console.WriteLine("----------------------------------------------------------------");
@@ -23,11 +23,8 @@ namespace Quests_to_complete1
                 Console.Write("New Quest:"); Console.WriteLine(quests[2]);
                 Console.WriteLine("(press enter to continue)");
                 Console.ReadKey();
+                Console.Clear();
 
-
-                Console.WriteLine("----------------------------------------------------------------");
-                Console.WriteLine("----------------------------------------------------------------");
-                Console.WriteLine("----------------------------------------------------------------");
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
                 Console.WriteLine("A." + quests[0]);
                 Console.WriteLine("B." + quests[1]);
@@ -84,7 +81,7 @@ namespace Quests_to_complete1
                     if (commandanswer1 == "mainmenu")
                     {
                         Console.Clear();
-                        intro1();
+                        edit3();
                     }
                     else if (commandanswer1 == "remove")
                     {
@@ -93,7 +90,7 @@ namespace Quests_to_complete1
                         Console.WriteLine("(press any key to continue)");
                         Console.ReadKey();
                         Console.Clear();
-                        intro1();
+                        edit3();
                     }
                     else if (commandanswer1 == "edit")
                     {

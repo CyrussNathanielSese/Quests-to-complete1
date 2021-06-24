@@ -11,6 +11,7 @@ namespace Quests_to_complete1
             Exitpanel();
             static void Exitpanel()
             {
+                Console.Title = "EXIT PANEL";
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("OK, have a good day :)");
