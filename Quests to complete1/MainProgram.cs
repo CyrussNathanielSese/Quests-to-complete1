@@ -40,9 +40,11 @@ namespace Quests_to_complete1
 
                 while (response1 != yes1 && response1 != no1)//If the user type anything else aside from 'yes' or 'no', he/she will be asked to write a right command.
                 {
-                    Console.WriteLine("please enter a correct command");
-                    Console.WriteLine("(please type 'yes' or 'no' to continue)");
-                    Console.Write("Response:"); response1 = Console.ReadLine().ToLower();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("please enter a correct command");
+                Console.ResetColor();
+                Console.WriteLine("(please type 'yes' or 'no' to continue)");
+                Console.Write("Response:"); response1 = Console.ReadLine().ToLower();
                     //THIS LOOP WILL BE REPEATED ONCE THE USER DID NOT TYPE 'YES' OR 'NO'//
                 }
 
@@ -68,9 +70,11 @@ namespace Quests_to_complete1
 
                     while (response2 != yes2 && response2 != no2)
                     {
-                        Console.WriteLine("please enter a correct command");
-                        Console.WriteLine("(please type 'yes' or 'no' to continue)");
-                        Console.Write("Response:"); response2 = Console.ReadLine().ToLower();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("please enter a correct command");
+                    Console.ResetColor();
+                    Console.WriteLine("(please type 'yes' or 'no' to continue)");
+                    Console.Write("Response:"); response2 = Console.ReadLine().ToLower();
                     }
 
                     if (response2 == "yes")
@@ -85,5 +89,6 @@ namespace Quests_to_complete1
                     }
                 }
            }
+            
     }
 }

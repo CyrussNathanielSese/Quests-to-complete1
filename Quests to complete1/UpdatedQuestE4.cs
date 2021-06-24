@@ -9,7 +9,7 @@ namespace Quests_to_complete1
     {
         public UpdatedQuestE4()
         {
-            edit5();
+            /*edit5();
             static void edit5()
             {
                 string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
@@ -103,7 +103,7 @@ namespace Quests_to_complete1
 
 
                 }
-            }
+            }*/
         }
 
 

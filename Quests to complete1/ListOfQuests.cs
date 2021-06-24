@@ -15,16 +15,21 @@ namespace Quests_to_complete1
                 Console.Title = "LIST OF QUESTS";
                 string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
                 Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
+                Console.ResetColor();
                 Console.WriteLine("A." + quests[0]);
                 Console.WriteLine("B." + quests[1]);
                 Console.WriteLine("C." + quests[2]);
                 Console.WriteLine("D." + quests[3]);
                 Console.WriteLine("E." + quests[4]);
                 Console.WriteLine("Do you want to edit your quests?");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter of the quest you want to edit or delete.");
                 Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("(example: A,a )\n");
+                Console.ResetColor();
                 Console.Write("Command:"); string command1 = Console.ReadLine().ToLower();
 
                 string a = "a";
@@ -36,7 +41,9 @@ namespace Quests_to_complete1
                 //THE USER NEEDS TO TYPE THE EXACT LETTER OF THE QUEST IN ORDER TO GO TO THAT QUESTS'S COMMANDS//
                 while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e && command1 != exit)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("(Please enter a valid letter)");
+                    Console.ResetColor();
                     Console.Write("Command:"); command1 = Console.ReadLine().ToLower(); //THE USER WILL BE ASKED REPEATEDLY TO TYPE THE SPECIFIC LETTER OF QUEST"
                 }
                 if (command1 == "exit")
