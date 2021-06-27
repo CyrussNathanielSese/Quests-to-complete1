@@ -9,7 +9,7 @@ namespace Quests_to_complete1
     
          static void Main(string[] args)
          {
-                Console.Title = "WELCOME";
+                Console.Title = "Quests To Complete";
                 DateTime now = DateTime.Now;
                 Console.WriteLine(now.ToString());
                 //INTRODUCTION//

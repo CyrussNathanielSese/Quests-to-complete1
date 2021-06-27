@@ -17,6 +17,8 @@ namespace Quests_to_complete1
                 Console.WriteLine("OK, have a good day :)");
                 Console.ResetColor();
                 Console.WriteLine("(press any key to continue)");
+
+                //This class is already done.
             }
         }
     }

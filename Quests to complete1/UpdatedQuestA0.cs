@@ -17,7 +17,9 @@ namespace Quests_to_complete1
                 Console.WriteLine("Please enter your new quest below...");
                 Console.Write("New Quest:"); quests[0] = Console.ReadLine();
                 Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Edit Complete");
+                Console.ResetColor();
                 Console.Write("New Quest:"); Console.WriteLine(quests[0]);
                 Console.WriteLine("(press enter to continue)");
                 Console.ReadKey();
@@ -25,15 +27,21 @@ namespace Quests_to_complete1
 
 
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("A." + quests[0]);
                 Console.WriteLine("B." + quests[1]);
                 Console.WriteLine("C." + quests[2]);
                 Console.WriteLine("D." + quests[3]);
                 Console.WriteLine("E." + quests[4]);
+                Console.ResetColor();
                 Console.WriteLine("Do you want to edit your quests?");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter of the quest you want to edit or delete.");
                 Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
-                Console.WriteLine("(example: A,a )\n");
+                Console.WriteLine("(example: A,a )");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on any slot)");
+                Console.ResetColor();
                 Console.Write("Command:"); string command1 = Console.ReadLine().ToLower();
 
                 string a = "a";
@@ -310,6 +318,11 @@ namespace Quests_to_complete1
                     EXITPANEL EXIT1 = new EXITPANEL();
                 }
 
+
+                ///////     ///////    /////////   //////    //     //   //////              //////////  //   //   //////  /////
+                //   //     //        //  //  //   //  //     //   //    //                      //      ///////     //    //
+                /////       ///        // //  //   //  //      // //     ///                     //      //   //     //      ///
+                //  ///     ////////   //     //   //////       ///      ///////                 //      //   //   /////  /////
 
                 if (command1 == "c")
                 {
