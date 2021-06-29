@@ -13,7 +13,7 @@ namespace Quests_to_complete1
              string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
              Console.WriteLine("Do you want to Delete this quest?\n");
              Console.WriteLine("(type 'yes' if you wish to delete the quest or type 'no')");
-             Console.Write("Quest:A. "); Console.WriteLine(quests[0] + "\n");
+             Console.Write("Quest:A."); Console.WriteLine(quests[0] + "\n");
              Console.Write("Reponse:"); string deleteresponse1 = Console.ReadLine().ToLower();
              string deleteYES = "yes";
              string deleteNO = "no";
