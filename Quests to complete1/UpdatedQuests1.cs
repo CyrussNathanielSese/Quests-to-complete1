@@ -5,9 +5,9 @@ using System.IO;
 
 namespace Quests_to_complete1
 {
-    public class UpdatedQuestA0
+    public class UpdatedQuests1
     {
-        public UpdatedQuestA0()
+        public UpdatedQuests1()
         {
             edit1();
             static void edit1()
@@ -26,21 +26,27 @@ namespace Quests_to_complete1
                 Console.Clear();
 
 
+                Console.Title = "LIST OF QUESTS";
+                Console.Clear();
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("A." + quests[0]);
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("B." + quests[1]);
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("C." + quests[2]);
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("D." + quests[3]);
+                Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("E." + quests[4]);
                 Console.ResetColor();
                 Console.WriteLine("Do you want to edit your quests?");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter of the quest you want to edit or delete.");
                 Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
-                Console.WriteLine("(example: A,a )");
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on any slot)");
+                Console.WriteLine("Note: ALL of your quests will be deleted once you close the program.");
+                Console.WriteLine("(example: A,a )\n");
                 Console.ResetColor();
                 Console.Write("Command:"); string command1 = Console.ReadLine().ToLower();
 
@@ -88,7 +94,7 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "edit")
                     {
-                        UpdatedQuestA0 U1 = new UpdatedQuestA0();
+                        UpdatedQuests1 U1 = new UpdatedQuests1();
                     }
 
                 }
@@ -556,8 +562,6 @@ namespace Quests_to_complete1
                 //   //     //        //  //  //   //  //     //   //    //                      //      ///////     //    //
                 /////       ///        // //  //   //  //      // //     ///                     //      //   //     //      ///
                 //  ///     ////////   //     //   //////       ///      ///////                 //      //   //   /////  /////
-
-
 
 
             }

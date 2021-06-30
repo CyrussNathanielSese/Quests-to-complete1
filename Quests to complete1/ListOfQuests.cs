@@ -16,15 +16,19 @@ namespace Quests_to_complete1
                 string[] quests = { "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT" };
                 Console.Clear();
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("A." + quests[0]);
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("B." + quests[1]);
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("C." + quests[2]);
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("D." + quests[3]);
+                Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("E." + quests[4]);
                 Console.ResetColor();
                 Console.WriteLine("Do you want to edit your quests?");
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter of the quest you want to edit or delete.");
                 Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
                 Console.WriteLine("(example: A,a )\n");
@@ -86,7 +90,7 @@ namespace Quests_to_complete1
                     else if (commandanswer1 == "edit")
                     {
                         Console.Clear();
-                        UpdatedQuestA0 A0 = new UpdatedQuestA0();
+                        UpdatedQuests1 A0 = new UpdatedQuests1();
                     }
 
 
@@ -128,7 +132,7 @@ namespace Quests_to_complete1
                     else if (commandanswer1 == "edit")
                     {
                         Console.Clear();
-                        UpdatedQuestB1 B1 = new UpdatedQuestB1();
+                        UpdatedQuests2 A0 = new UpdatedQuests2();
                     }
                 }
                 if (command1 == "c")
@@ -170,7 +174,7 @@ namespace Quests_to_complete1
                     else if (commandanswer1 == "edit")
                     {
                         Console.Clear();
-                        UpdatedQuestC2 C2 = new UpdatedQuestC2();
+                        UpdatedQuests3 A2 = new UpdatedQuests3();
                     }
                 }
                 if (command1 == "d")
@@ -212,7 +216,7 @@ namespace Quests_to_complete1
                     else if (commandanswer1 == "edit")
                     {
                         Console.Clear();
-                        UpdatedQuestD3 D3 = new UpdatedQuestD3();
+                        UpdatedQuests1 A0 = new UpdatedQuests1();
                     }
                 }
                 if (command1 == "e")
@@ -254,7 +258,7 @@ namespace Quests_to_complete1
                     else if (commandanswer1 == "edit")
                     {
                         Console.Clear();
-                        UpdatedQuestE4 E4 = new UpdatedQuestE4();
+                        UpdatedQuests1 A0 = new UpdatedQuests1();
                     }
                 }
             }
