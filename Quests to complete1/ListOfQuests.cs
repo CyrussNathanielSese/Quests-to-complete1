@@ -15,7 +15,11 @@ namespace Quests_to_complete1
                 Console.Title = "LIST OF QUESTS";
                 string[] quests = { "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT" };//THERE WILL BE A DEFAULT LIST OF QUESTS THAT WILL BE SHOWN AND IT WILL BE LISTED IN AN ARRAY//
                 Console.Clear();
-                Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
+                Console.Title = "Quests To Complete";
+                DateTime now = DateTime.Now;
+                Console.WriteLine(now.ToString());
+                Console.WriteLine("\nPlease choose a letter below to fill...");//lists of quests are shown below[DEFAULT QUESTS]
+                Console.WriteLine("------------------------------------------------");
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("A." + quests[0]);
                 Console.ForegroundColor = ConsoleColor.Cyan;
@@ -27,10 +31,11 @@ namespace Quests_to_complete1
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("E." + quests[4]);
                 Console.ResetColor();
-                Console.WriteLine("\nDo you want add or edit a quest?");//The user will be asked if he/she wants to modify the default set of quests. //The user will be supported with heaps of choices below
+                Console.WriteLine("------------------------------------------------");
+                Console.WriteLine("Do you want add or edit a quest?");//The user will be asked if he/she wants to modify the default set of quests. //The user will be supported with heaps of choices below
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Type the letter of the quest that you want to edit or delete.");
-                Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
+                Console.WriteLine("Type the letter of the line to put your quest.");
+                Console.WriteLine("You can also type 'exit' or click the 'X' button in the upper right panel if you want to quit the program.");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("(if you close the program, all of the quests that you added will be removed)");
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -63,11 +68,13 @@ namespace Quests_to_complete1
                 if (command1 == "a")
                 {
                     Console.Clear();
-                    Console.Title = "LIST OF QUESTS";
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests:A."); Console.WriteLine(quests[0] + "\n");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write("Quest A:"); Console.WriteLine(quests[0] + "\n");
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("(comment 'delete' if you want to remove/delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
-                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
+                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
+                    Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string mainmenu = "mainmenu";
                     string remove = "delete";
@@ -75,7 +82,9 @@ namespace Quests_to_complete1
 
                     while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != exit)
                     {
-                        Console.WriteLine("Please comment a valid command");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("(Please comment a valid command)");
+                        Console.ResetColor();
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
                     }
                     //
@@ -103,16 +112,21 @@ namespace Quests_to_complete1
                 {
                     Console.Clear();
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests:B."); Console.WriteLine(quests[1] + "\n");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.Write("Quest B:"); Console.WriteLine(quests[1] + "\n");
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
-                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
+                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
+                    Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string mainmenu = "mainmenu";
                     string remove = "remove";
                     string edit = "edit";
                     while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit)
                     {
-                        Console.WriteLine("Please comment a valid command");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("(Please comment a valid command)");
+                        Console.ResetColor();
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
                     }
                     //
@@ -142,16 +156,21 @@ namespace Quests_to_complete1
                 {
                     Console.Clear();
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests:C."); Console.WriteLine(quests[2] + "\n");
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.Write("Quest C:"); Console.WriteLine(quests[2] + "\n");
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
-                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
+                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
+                    Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string mainmenu = "mainmenu";
                     string remove = "remove";
                     string edit = "edit";
                     while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit)
                     {
-                        Console.WriteLine("Please comment a valid command");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("(Please comment a valid command)");
+                        Console.ResetColor();
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
                     }
                     //
@@ -181,16 +200,21 @@ namespace Quests_to_complete1
                 {
                     Console.Clear();
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests:D."); Console.WriteLine(quests[3] + "\n");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write("Quest D:"); Console.WriteLine(quests[3] + "\n");
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
-                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
+                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
+                    Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string mainmenu = "mainmenu";
                     string remove = "remove";
                     string edit = "edit";
                     while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit)
                     {
-                        Console.WriteLine("Please comment a valid command");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("(Please comment a valid command)");
+                        Console.ResetColor();
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
                     }
                     //
@@ -213,23 +237,27 @@ namespace Quests_to_complete1
                     else if (commandanswer1 == "edit")
                     {
                         Console.Clear();
-                        UpdatedQuests1 A0 = new UpdatedQuests1();
+                        UpdatedQuests4 A0 = new UpdatedQuests4();
                     }
                 }
                 if (command1 == "e")
                 {
                     Console.Clear();
                     Console.WriteLine("What do you want to do to this Quest?\n");
-                    Console.Write("Quests:E."); Console.WriteLine(quests[4] + "\n");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.Write("Quest E:"); Console.WriteLine(quests[4] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
-                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)");
+                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
+                    Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string mainmenu = "mainmenu";
                     string remove = "remove";
                     string edit = "edit";
                     while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit)
                     {
-                        Console.WriteLine("Please comment a valid command");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("(Please comment a valid command)");
+                        Console.ResetColor();
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine();
                     }
                     //
@@ -252,7 +280,7 @@ namespace Quests_to_complete1
                     else if (commandanswer1 == "edit")
                     {
                         Console.Clear();
-                        UpdatedQuests1 A0 = new UpdatedQuests1();
+                        UpdatedQuests5 A0 = new UpdatedQuests5();
                     }
                 }
             }

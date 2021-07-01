@@ -11,7 +11,7 @@ namespace Quests_to_complete1
             edit1();
             static void edit1()
             {
-                string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
+                string[] quests = { "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT" };
                 Console.Title = "Quest Slot 1";
                 Console.WriteLine("Please enter your new quest below...");
                 Console.Write("New Quest:"); quests[3] = Console.ReadLine();
@@ -101,9 +101,6 @@ namespace Quests_to_complete1
                 else if (command1 == "b")
                 {
                     Console.Clear();
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.Write("Quests: A."); Console.WriteLine(quests[1] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
@@ -137,9 +134,6 @@ namespace Quests_to_complete1
                 else if (command1 == "c")
                 {
                     Console.Clear();
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.Write("Quests: A."); Console.WriteLine(quests[2] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
@@ -170,9 +164,6 @@ namespace Quests_to_complete1
                 else if (command1 == "d")
                 {
                     Console.Clear();
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.Write("Quests: A."); Console.WriteLine(quests[3] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
@@ -203,9 +194,6 @@ namespace Quests_to_complete1
                 else if (command1 == "e")
                 {
                     Console.Clear();
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.Write("Quests: A."); Console.WriteLine(quests[4] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
@@ -284,9 +272,7 @@ namespace Quests_to_complete1
 
                 if (command1 == "b")
                 {
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
+                    Console.Clear();
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.Write("Quests: A."); Console.WriteLine(quests[1] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
@@ -362,9 +348,7 @@ namespace Quests_to_complete1
 
                 if (command1 == "c")
                 {
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
+                    Console.Clear();
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.Write("Quests:A."); Console.WriteLine(quests[2] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
@@ -442,9 +426,7 @@ namespace Quests_to_complete1
 
                     if (command1 == "d")
                     {
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.Clear();
                         Console.WriteLine("What do you want to do to this Quest?\n");
                         Console.Write("Quests:A."); Console.WriteLine(quests[3] + "\n");
                         Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
@@ -523,9 +505,7 @@ namespace Quests_to_complete1
 
                     if (command1 == "d")
                     {
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
-                        Console.WriteLine("----------------------------------------------------------------");
+                        Console.Clear();
                         Console.WriteLine("What do you want to do to this Quest?\n");
                         Console.Write("Quests:A."); Console.WriteLine(quests[4] + "\n");
                         Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
