@@ -13,7 +13,7 @@ namespace Quests_to_complete1
             static void Lists()
             {
                 Console.Title = "LIST OF QUESTS";
-                string[] quests = { "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT" };
+                string[] quests = { "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT" };//THERE WILL BE A DEFAULT LIST OF QUESTS THAT WILL BE SHOWN AND IT WILL BE LISTED IN AN ARRAY//
                 Console.Clear();
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -27,10 +27,13 @@ namespace Quests_to_complete1
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("E." + quests[4]);
                 Console.ResetColor();
-                Console.WriteLine("Do you want to edit your quests?");
+                Console.WriteLine("\nDo you want add or edit a quest?");//The user will be asked if he/she wants to modify the default set of quests. //The user will be supported with heaps of choices below
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Type the letter of the quest you want to edit or delete.");
+                Console.WriteLine("Type the letter of the quest that you want to edit or delete.");
                 Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("(if you close the program, all of the quests that you added will be removed)");
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("(example: A,a )\n");
                 Console.ResetColor();
                 Console.Write("Command:"); string command1 = Console.ReadLine().ToLower();
@@ -138,9 +141,6 @@ namespace Quests_to_complete1
                 if (command1 == "c")
                 {
                     Console.Clear();
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.Write("Quests:C."); Console.WriteLine(quests[2] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
@@ -180,9 +180,6 @@ namespace Quests_to_complete1
                 if (command1 == "d")
                 {
                     Console.Clear();
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.Write("Quests:D."); Console.WriteLine(quests[3] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
@@ -222,9 +219,6 @@ namespace Quests_to_complete1
                 if (command1 == "e")
                 {
                     Console.Clear();
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
-                    Console.WriteLine("----------------------------------------------------------------");
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.Write("Quests:E."); Console.WriteLine(quests[4] + "\n");
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");

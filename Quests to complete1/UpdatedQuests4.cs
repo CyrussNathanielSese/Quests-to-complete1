@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Quests_to_complete1
 {
-    class UpdatedQuests3
+    class UpdatedQuests4
     {
-        public UpdatedQuests3()
+        public UpdatedQuests4()
         {
             edit1();
             static void edit1()
@@ -14,12 +14,12 @@ namespace Quests_to_complete1
                 string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
                 Console.Title = "Quest Slot 1";
                 Console.WriteLine("Please enter your new quest below...");
-                Console.Write("New Quest:"); quests[2] = Console.ReadLine();
+                Console.Write("New Quest:"); quests[3] = Console.ReadLine();
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Edit Complete");
                 Console.ResetColor();
-                Console.Write("New Quest:"); Console.WriteLine(quests[2]);
+                Console.Write("New Quest:"); Console.WriteLine(quests[3]);
                 Console.WriteLine("(press enter to continue)");
                 Console.ReadKey();
                 Console.Clear();
@@ -567,3 +567,4 @@ namespace Quests_to_complete1
         }
     }
 }
+
