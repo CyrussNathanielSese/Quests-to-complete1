@@ -13,7 +13,9 @@ namespace Quests_to_complete1
             {
                 string[] quests = { "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT" };
                 Console.Title = "Quest Slot 1";
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Please enter your new quest below...");
+                Console.ResetColor();
                 Console.Write("New Quest:"); quests[3] = Console.ReadLine();
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -28,6 +30,7 @@ namespace Quests_to_complete1
                 Console.Title = "LIST OF QUESTS";
                 Console.Clear();
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
+                Console.WriteLine("------------------------------------------------");
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("A." + quests[0]);
                 Console.ForegroundColor = ConsoleColor.Cyan;
@@ -39,6 +42,7 @@ namespace Quests_to_complete1
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("E." + quests[4]);
                 Console.ResetColor();
+                Console.WriteLine("------------------------------------------------");
                 Console.WriteLine("Do you want to edit your quests?");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter of the quest you want to edit or delete.");
@@ -227,7 +231,7 @@ namespace Quests_to_complete1
             edit2();
             static void edit2()
             {
-                string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
+                string[] quests = { "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT" };
                 Console.Title = "Quest Slot 1";
                 Console.WriteLine("Please enter your new quest below...");
                 Console.Write("New Quest:"); quests[1] = Console.ReadLine();
@@ -240,11 +244,19 @@ namespace Quests_to_complete1
 
 
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
+                Console.WriteLine("------------------------------------------------");
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("A." + quests[0]);
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("B." + quests[1]);
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("C." + quests[2]);
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("D." + quests[3]);
+                Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("E." + quests[4]);
+                Console.ResetColor();
+                Console.WriteLine("------------------------------------------------");
                 Console.WriteLine("Do you want to edit your quests?");
                 Console.WriteLine("Type the letter of the quest you want to edit or delete.");
                 Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
@@ -304,7 +316,7 @@ namespace Quests_to_complete1
             edit3();
             static void edit3()
             {
-                string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
+                string[] quests = { "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT" };
                 Console.Title = "Quest Slot 1";
                 Console.WriteLine("Please enter your new quest below...");
                 Console.Write("New Quest:"); quests[2] = Console.ReadLine();
@@ -317,11 +329,19 @@ namespace Quests_to_complete1
 
 
                 Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
+                Console.WriteLine("------------------------------------------------");
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("A." + quests[0]);
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("B." + quests[1]);
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("C." + quests[2]);
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("D." + quests[3]);
+                Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("E." + quests[4]);
+                Console.ResetColor();
+                Console.WriteLine("------------------------------------------------");
                 Console.WriteLine("Do you want to edit your quests?");
                 Console.WriteLine("Type the letter of the quest you want to edit or delete.");
                 Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
@@ -377,11 +397,12 @@ namespace Quests_to_complete1
 
                 }
 
+            }
 
                 edit4();
                 static void edit4()
                 {
-                    string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
+                    string[] quests = { "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT" };
                     Console.Title = "Quest Slot 1";
                     Console.WriteLine("Please enter your new quest below...");
                     Console.Write("New Quest:"); quests[3] = Console.ReadLine();
@@ -394,12 +415,20 @@ namespace Quests_to_complete1
 
 
                     Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
-                    Console.WriteLine("A." + quests[0]);
-                    Console.WriteLine("B." + quests[1]);
-                    Console.WriteLine("C." + quests[2]);
-                    Console.WriteLine("D." + quests[3]);
-                    Console.WriteLine("E." + quests[4]);
-                    Console.WriteLine("Do you want to edit your quests?");
+                Console.WriteLine("------------------------------------------------");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("A." + quests[0]);
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("B." + quests[1]);
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("C." + quests[2]);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("D." + quests[3]);
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.WriteLine("E." + quests[4]);
+                Console.ResetColor();
+                Console.WriteLine("------------------------------------------------");
+                Console.WriteLine("Do you want to edit your quests?");
                     Console.WriteLine("Type the letter of the quest you want to edit or delete.");
                     Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
                     Console.WriteLine("(example: A,a )\n");
@@ -460,7 +489,7 @@ namespace Quests_to_complete1
                 edit5();
                 static void edit5()
                 {
-                    string[] quests = { "nothing", "nothing2", "nothing3", "nothing4", "nothing5" };
+                    string[] quests = { "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT", "EMPTY SLOT" };
                     Console.Title = "Quest Slot 1";
                     Console.WriteLine("Please enter your new quest below...");
                     Console.Write("New Quest:"); quests[4] = Console.ReadLine();
@@ -473,12 +502,20 @@ namespace Quests_to_complete1
 
 
                     Console.WriteLine("These are your Quests for today...");//lists of quests are shown below[DEFAULT QUESTS]
-                    Console.WriteLine("A." + quests[0]);
-                    Console.WriteLine("B." + quests[1]);
-                    Console.WriteLine("C." + quests[2]);
-                    Console.WriteLine("D." + quests[3]);
-                    Console.WriteLine("E." + quests[4]);
-                    Console.WriteLine("Do you want to edit your quests?");
+                Console.WriteLine("------------------------------------------------");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("A." + quests[0]);
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("B." + quests[1]);
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("C." + quests[2]);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("D." + quests[3]);
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.WriteLine("E." + quests[4]);
+                Console.ResetColor();
+                Console.WriteLine("------------------------------------------------");
+                Console.WriteLine("Do you want to edit your quests?");
                     Console.WriteLine("Type the letter of the quest you want to edit or delete.");
                     Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
                     Console.WriteLine("(example: A,a )\n");
@@ -543,8 +580,8 @@ namespace Quests_to_complete1
                 //  ///     ////////   //     //   //////       ///      ///////                 //      //   //   /////  /////
 
 
-            }
         }
     }
 }
+
 

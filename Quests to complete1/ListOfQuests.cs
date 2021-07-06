@@ -34,7 +34,7 @@ namespace Quests_to_complete1
                 Console.WriteLine("------------------------------------------------");
                 Console.WriteLine("Do you want add or edit a quest?");//The user will be asked if he/she wants to modify the default set of quests. //The user will be supported with heaps of choices below
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Type the letter of the line to put your quest.");
+                Console.WriteLine("Type the letter to put your quest.");
                 Console.WriteLine("You can also type 'exit' or click the 'X' button in the upper right panel if you want to quit the program.");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("(if you close the program, all of the quests that you added will be removed)");
@@ -135,7 +135,7 @@ namespace Quests_to_complete1
                     if (commandanswer1 == "mainmenu")
                     {
                         Console.Clear();
-                        MainProgram Main1 = new MainProgram();
+                        Lists();
                     }
                     else if (commandanswer1 == "remove")
                     {
@@ -179,7 +179,7 @@ namespace Quests_to_complete1
                     if (commandanswer1 == "mainmenu")
                     {
                         Console.Clear();
-                        MainProgram Main1 = new MainProgram();
+                        Lists();
                     }
                     else if (commandanswer1 == "remove")
                     {
@@ -223,7 +223,7 @@ namespace Quests_to_complete1
                     if (commandanswer1 == "mainmenu")
                     {
                         Console.Clear();
-                        MainProgram Main1 = new MainProgram();
+                        Lists();
                     }
                     else if (commandanswer1 == "remove")
                     {
@@ -246,6 +246,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("What do you want to do to this Quest?\n");
                     Console.ForegroundColor = ConsoleColor.Magenta;
                     Console.Write("Quest E:"); Console.WriteLine(quests[4] + "\n");
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("(comment 'remove' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest\a");
                     Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
                     Console.ResetColor();
@@ -266,7 +267,7 @@ namespace Quests_to_complete1
                     if (commandanswer1 == "mainmenu")
                     {
                         Console.Clear();
-                        MainProgram Main1 = new MainProgram();
+                        Lists();
                     }
                     else if (commandanswer1 == "remove")
                     {
