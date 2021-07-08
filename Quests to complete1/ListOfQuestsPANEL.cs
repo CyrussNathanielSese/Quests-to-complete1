@@ -221,12 +221,8 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "remove")
                     {
-                        File.Delete(Quests[3]);
-                        Console.WriteLine("Command Complete");
-                        Console.WriteLine("(press any key to continue)");
-                        Console.ReadKey();
                         Console.Clear();
-                        MainProgram Main1 = new MainProgram();
+                        DeletedQuestD3 D3 = new DeletedQuestD3();
                     }
                     else if (commandanswer1 == "edit")
                     {
@@ -265,12 +261,8 @@ namespace Quests_to_complete1
                     }
                     else if (commandanswer1 == "remove")
                     {
-                        File.Delete(Quests[4]);
-                        Console.WriteLine("Command Complete");
-                        Console.WriteLine("(press any key to continue)");
-                        Console.ReadKey();
                         Console.Clear();
-                        MainProgram Main1 = new MainProgram();
+                        DeletedQuestE4 E4 = new DeletedQuestE4();
                     }
                     else if (commandanswer1 == "edit")
                     {

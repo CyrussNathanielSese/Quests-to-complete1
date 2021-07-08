@@ -16,7 +16,7 @@ namespace Quests_to_complete1
                 Console.ForegroundColor = ConsoleColor.Green; Console.WriteLine("Welcome to Quests To Complete!");
                 Console.ResetColor();
                 Console.WriteLine("What can you do on this application?\nThis App will allow you to store things the you will do in your computer in a classy-command block look.\nJust simply follow the guidelines that will be implemented by this app.");
-                Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("(Remember that if you close this program, All of the things that you put on this application will be lost)");
+                Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("(Remember that if you close this program, All of the things that you put on this application will be LOST)");
                 Console.ResetColor();
                 Console.WriteLine("ENJOY :)\n");
                 Console.Write("(press any key to continue)");
@@ -28,7 +28,7 @@ namespace Quests_to_complete1
            {
                 Console.Title = "YES OR NO?";
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Do you want to look to your Quests for today?");
+                Console.WriteLine("Do you want to proceed to the program?");
                 Console.ResetColor();
                 Console.WriteLine("(please type 'yes' or 'no' to continue)");//There will be two choices for this part
 
@@ -60,6 +60,7 @@ namespace Quests_to_complete1
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Do you want to exit the program?");
                     Console.ResetColor();
+                    Console.WriteLine("(if you close the program, all of the quests that you added will be removed)");
                     Console.WriteLine("(please type 'yes' or 'no' to continue)");
                     Console.Write("Response:"); string response2 = Console.ReadLine().ToLower();
 

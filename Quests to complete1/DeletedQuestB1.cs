@@ -40,33 +40,14 @@ namespace Quests_to_complete1
             }
             else if (deleteresponse1 == "no")
             {
-                string mainmenuResponseYES = "yes";
-                string mainmenuResponseNO = "no";
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Do you wish to go back to the main menu?");
+                Console.WriteLine("You will be moved to the main menu shortly");
+                Console.WriteLine("(press any key to continue)");
+                Console.ReadKey();
                 Console.ResetColor();
-                Console.WriteLine("type 'yes' or 'no' to continue");
-                Console.Write("Reponse:"); string mainmenuResponse = Console.ReadLine().ToLower();
-                while (mainmenuResponse != mainmenuResponseYES && mainmenuResponse != mainmenuResponseNO)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Please enter a right command");
-                    Console.ResetColor();
-                    Console.WriteLine("type 'yes' or 'no' to continue");
-                    Console.Write("Reponse:"); mainmenuResponse = Console.ReadLine();
-                }
-                if (mainmenuResponseYES == "yes")
-                {
-                    Console.Clear();
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("You will be moved to the main menu shortly");
-                    Console.WriteLine("(press any key to continue)");
-                    Console.ReadKey();
-                    Console.ResetColor();
-                    Console.Clear();
-                    ListOfQuestsPANEL L1 = new ListOfQuestsPANEL();
-                }
+                Console.Clear();
+                ListOfQuestsPANEL L1 = new ListOfQuestsPANEL();
 
             }
         }

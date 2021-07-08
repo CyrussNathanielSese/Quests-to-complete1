@@ -4,15 +4,15 @@ using System.Text;
 
 namespace Quests_to_complete1
 {
-    class DeletedQuestC2 : QuestsLIST
+    class DeletedQuestD3 : QuestsLIST
     {
-        public DeletedQuestC2()
+        public DeletedQuestD3()
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Do you want to Delete this quest?\n");
             Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.Write("Quest C:"); Console.WriteLine(Quests[2] + "\n");
+            Console.Write("Quest C:"); Console.WriteLine(Quests[3] + "\n");
             Console.ResetColor();
             Console.WriteLine("(type 'yes' if you wish to delete the quest or type 'no')");
             Console.Write("Response:"); string deleteresponse1 = Console.ReadLine().ToLower();
@@ -29,7 +29,7 @@ namespace Quests_to_complete1
             if (deleteresponse1 == "yes")
             {
                 Console.Clear();
-                Quests[2] = "DELETED QUEST";
+                Quests[3] = "DELETED QUEST";
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Command Complete");
                 Console.ResetColor();
@@ -48,7 +48,6 @@ namespace Quests_to_complete1
                 Console.ResetColor();
                 Console.Clear();
                 ListOfQuestsPANEL L1 = new ListOfQuestsPANEL();
-
             }
         }
     }

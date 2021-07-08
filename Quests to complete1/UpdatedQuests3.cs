@@ -28,7 +28,10 @@ namespace Quests_to_complete1
 
                 Console.Title = "LIST OF QUESTS";
                 Console.Clear();
-                Console.WriteLine("These are your Quests for today...");//lists of Quests are shown below[DEFAULT Quests]
+                Console.Title = "Quests To Complete";
+                DateTime now = DateTime.Now;
+                Console.WriteLine(now.ToString());
+                Console.WriteLine("\nThese are your Quests for today...");//lists of Quests are shown below[DEFAULT Quests]
                 Console.WriteLine("------------------------------------------------");
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("A." + Quests[0]);
@@ -45,9 +48,10 @@ namespace Quests_to_complete1
                 Console.WriteLine("Do you want to edit your Quests?");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter of the quest you want to edit or delete.");
-                Console.WriteLine("You can also type 'exit' the program if you want to quit the program.");
+                Console.WriteLine("You can exit the program by clicking the 'X' in the upper right panel of the program.");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Note: ALL of your Quests will be deleted once you close the program.");
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("(example: A,a )\n");
                 Console.ResetColor();
                 Console.Write("Command:"); string command1 = Console.ReadLine().ToLower();
@@ -84,16 +88,16 @@ namespace Quests_to_complete1
                     Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
-                    string mainmenu = "mainmenu";
                     string remove = "delete";
                     string edit = "edit";
-                    while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != exit)
+                    while (commandanswer1 != remove && commandanswer1 != edit)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
                     }
                     if (commandanswer1 == "delete")
                     {
+                        Console.Clear();
                         DeletedQuestA0 A0 = new DeletedQuestA0();
                     }
                     else if (commandanswer1 == "edit")
@@ -117,10 +121,9 @@ namespace Quests_to_complete1
                     Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
-                    string mainmenu = "mainmenu";
                     string remove = "delete";
                     string edit = "edit";
-                    while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != exit)
+                    while (commandanswer1 != remove && commandanswer1 != edit)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
@@ -128,7 +131,8 @@ namespace Quests_to_complete1
 
                     if (commandanswer1 == "delete")
                     {
-                        DeletedQuestA0 A0 = new DeletedQuestA0();
+                        Console.Clear();
+                        DeletedQuestB1 B1 = new DeletedQuestB1();
                     }
                     else if (commandanswer1 == "edit")
                     {
@@ -152,10 +156,9 @@ namespace Quests_to_complete1
                     Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
-                    string mainmenu = "mainmenu";
                     string remove = "delete";
                     string edit = "edit";
-                    while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != exit)
+                    while (commandanswer1 != remove && commandanswer1 != edit)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
@@ -163,6 +166,7 @@ namespace Quests_to_complete1
 
                     if (commandanswer1 == "delete")
                     {
+                        Console.Clear();
                         DeletedQuestC2 C2 = new DeletedQuestC2();
                     }
                     else if (commandanswer1 == "edit")
@@ -184,10 +188,9 @@ namespace Quests_to_complete1
                     Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
-                    string mainmenu = "mainmenu";
                     string remove = "delete";
                     string edit = "edit";
-                    while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != exit)
+                    while (commandanswer1 != remove && commandanswer1 != edit)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
@@ -195,7 +198,8 @@ namespace Quests_to_complete1
 
                     if (commandanswer1 == "delete")
                     {
-                        DeletedQuestA0 A0 = new DeletedQuestA0();
+                        Console.Clear();
+                        DeletedQuestD3 D3 = new DeletedQuestD3();
                     }
                     else if (commandanswer1 == "edit")
                     {
@@ -216,10 +220,9 @@ namespace Quests_to_complete1
                     Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
-                    string mainmenu = "mainmenu";
                     string remove = "delete";
                     string edit = "edit";
-                    while (commandanswer1 != mainmenu && commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != exit)
+                    while (commandanswer1 != remove && commandanswer1 != edit)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
@@ -227,7 +230,8 @@ namespace Quests_to_complete1
 
                     if (commandanswer1 == "delete")
                     {
-                        DeletedQuestA0 A0 = new DeletedQuestA0();
+                        Console.Clear();
+                        DeletedQuestE4 E4 = new DeletedQuestE4();
                     }
                     else if (commandanswer1 == "edit")
                     {
