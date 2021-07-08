@@ -4,33 +4,32 @@ using System.Text;
 
 namespace Quests_to_complete1
 {
-    class DeletedQuestA0 : QuestsLIST
+    class DeletedQuestB1 : QuestsLIST
     {
-     
-        public DeletedQuestA0()
-            {
+        public DeletedQuestB1()
+        {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Do you want to Delete this quest?\n");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("Quest A:"); Console.WriteLine(Quests[0] + "\n");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("Quest B:"); Console.WriteLine(Quests[1] + "\n");
             Console.ResetColor();
             Console.WriteLine("(type 'yes' if you wish to delete the quest or type 'no')");
             Console.Write("Response:"); string deleteresponse1 = Console.ReadLine().ToLower();
-             string deleteYES = "yes";
-             string deleteNO = "no";
+            string deleteYES = "yes";
+            string deleteNO = "no";
 
-             while (deleteresponse1 != deleteYES && deleteresponse1 != deleteNO)
-             {
+            while (deleteresponse1 != deleteYES && deleteresponse1 != deleteNO)
+            {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("(Please type 'yes' or 'no' to continue with the command)");
                 Console.ResetColor();
                 Console.Write("Reponse:"); deleteresponse1 = Console.ReadLine().ToLower();
-             }
+            }
             if (deleteresponse1 == "yes")
             {
                 Console.Clear();
-                Quests[0] = "DELETED QUEST";
+                Quests[1] = "DELETED QUEST";
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Command Complete");
                 Console.ResetColor();
@@ -57,7 +56,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("type 'yes' or 'no' to continue");
                     Console.Write("Reponse:"); mainmenuResponse = Console.ReadLine();
                 }
-                if (mainmenuResponseYES  == "yes")
+                if (mainmenuResponseYES == "yes")
                 {
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.Green;
@@ -68,7 +67,7 @@ namespace Quests_to_complete1
                     Console.Clear();
                     ListOfQuestsPANEL L1 = new ListOfQuestsPANEL();
                 }
-                      
+
             }
         }
     }

@@ -49,7 +49,7 @@ namespace Quests_to_complete1
 
                 if (response1 == "yes")//if the user say 'yes', the program will move the user into the another class
                 {
-                    ListOfQuests L1 = new ListOfQuests();
+                    ListOfQuestsPANEL L1 = new ListOfQuestsPANEL();
                 }
 
                 else if (response1 == "no")
