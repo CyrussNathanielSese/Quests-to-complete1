@@ -85,7 +85,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("(comment 'delete' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on the first slot)");
-                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command");
+                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command)");
 
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
@@ -118,7 +118,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("(comment 'delete' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on the first slot)");
-                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command");
+                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command)");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string remove = "delete";
@@ -152,7 +152,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("(comment 'delete' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on the first slot)");
-                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command");
+                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command)");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string remove = "delete";
@@ -184,7 +184,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("(comment 'delete' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on the first slot)");
-                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command");
+                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command)");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string remove = "delete";
@@ -216,7 +216,7 @@ namespace Quests_to_complete1
                     Console.WriteLine("(comment 'delete' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on the first slot)");
-                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command");
+                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command)");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string remove = "delete";
