@@ -15,8 +15,8 @@ namespace Quests_to_complete1
                 //START OF INTRODUCTION//
                 Console.ForegroundColor = ConsoleColor.Green; Console.WriteLine("Welcome to Quests To Complete!");
                 Console.ResetColor();
-                Console.WriteLine("What can you do on this application?\nThis App will allow you to store things the you will do in your computer in a classy-command block look.\nJust simply follow the guidelines that will be implemented by this app.");
-                Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("(Remember that if you close this program, All of the things that you put on this application will be LOST)");
+                Console.WriteLine("What can you do on this application?\nThis App will allow you to store things that you will do in your computer in a classy-command block look.\nJust simply follow the guidelines that will be implemented by the app.");
+                Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("(Remember that if you close this program, all of the things that you put on this application will be LOST)");
                 Console.ResetColor();
                 Console.WriteLine("ENJOY :)\n");
                 Console.Write("(press any key to continue)");
