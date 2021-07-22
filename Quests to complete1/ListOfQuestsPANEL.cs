@@ -13,7 +13,7 @@ namespace Quests_to_complete1
             static void Lists()
             {
                 Console.Title = "LIST OF QUESTS";
-                //THERE WILL BE A DEFAULT LIST OF QUESTS THAT WILL BE SHOWN AND IT WILL BE LISTED IN AN ARRAY//
+                //THERE WILL BE A DEFAULT LIST OF QUESTS THAT WILL BE SHOWN AND IT WILL BE LISTED//
                 Console.Clear();
                 Console.Title = "Quests To Complete";
                 DateTime now = DateTime.Now;
@@ -35,7 +35,7 @@ namespace Quests_to_complete1
                 Console.WriteLine("Do you want edit or delete a quest?");//The user will be asked if he/she wants to modify the default set of quests. //The user will be supported with heaps of choices below
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter to put your quest.");
-                Console.WriteLine("You can also type 'exit' or click the 'X' button in the upper right panel if you want to quit the program.");
+                Console.WriteLine("You can also type 'exit' or click the 'X' button on the upper right panel if you want to quit the program.");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("(if you close the program, all of the quests that you added will be removed)");
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -49,7 +49,7 @@ namespace Quests_to_complete1
                 string d = "d";
                 string e = "e";
                 string exit = "exit";
-                //THE USER NEEDS TO TYPE THE EXACT LETTER OF THE QUEST IN ORDER TO GO TO THAT QUESTS'S COMMANDS//
+                //THE USER NEEDS TO TYPE THE EXACT LETTER OF THE QUEST IN ORDER TO GO TO THE QUESTS'S COMMANDS//
 
                 while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e && command1 != exit)
                 {
@@ -62,7 +62,7 @@ namespace Quests_to_complete1
                 }
                 if (command1 == "exit")
                 {
-                    EXITPANEL EXIT = new EXITPANEL(); //When the user chose to exit the program, he will be moved into a new class which will allow the user to ge out of the program.
+                    EXITPANEL EXIT = new EXITPANEL();
                 }
 
 
