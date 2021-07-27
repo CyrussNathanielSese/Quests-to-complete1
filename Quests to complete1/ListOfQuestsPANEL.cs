@@ -32,6 +32,7 @@ namespace Quests_to_complete1
                 Console.WriteLine("E." + Quests[4]);
                 Console.ResetColor();
                 Console.WriteLine("------------------------------------------------");
+                Console.WriteLine("Stay at this panel if you do not want to add or edit your quests");
                 Console.WriteLine("Do you want edit or delete a quest?");//The user will be asked if he/she wants to modify the default set of quests. //The user will be supported with heaps of choices below
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter to put your quest.");
@@ -219,7 +220,7 @@ namespace Quests_to_complete1
                         Console.Clear();
                         Lists();
                     }
-                    else if (commandanswer1 == "remove")
+                    else if (commandanswer1 == "delete")
                     {
                         Console.Clear();
                         DeletedQuestD3 D3 = new DeletedQuestD3();
@@ -259,7 +260,7 @@ namespace Quests_to_complete1
                         Console.Clear();
                         Lists();
                     }
-                    else if (commandanswer1 == "remove")
+                    else if (commandanswer1 == "delete")
                     {
                         Console.Clear();
                         DeletedQuestE4 E4 = new DeletedQuestE4();

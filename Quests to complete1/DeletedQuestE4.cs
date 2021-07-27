@@ -11,8 +11,8 @@ namespace Quests_to_complete1
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Do you want to Delete this quest?\n");
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.Write("Quest C:"); Console.WriteLine(Quests[4] + "\n");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("Quest E:"); Console.WriteLine(Quests[4] + "\n");
             Console.ResetColor();
             Console.WriteLine("(type 'yes' if you wish to delete the quest or type 'no')");
             Console.Write("Response:"); string deleteresponse1 = Console.ReadLine().ToLower();
