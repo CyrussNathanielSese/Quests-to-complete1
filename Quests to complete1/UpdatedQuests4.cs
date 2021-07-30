@@ -62,9 +62,10 @@ namespace Quests_to_complete1
                 string c = "c";
                 string d = "d";
                 string e = "e";
-                
+                string exit = "exit";
+
                 //THE USER NEEDS TO TYPE THE EXACT LETTER OF THE QUEST IN ORDER TO GO TO THAT Quests'S COMMANDS//
-                while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e)
+                while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e && command1 != exit)
                 {
                     Console.WriteLine("(Please enter a valid letter)");
                     Console.Write("Command:"); command1 = Console.ReadLine().ToLower(); //THE USER WILL BE ASKED REPEATEDLY TO TYPE THE SPECIFIC LETTER OF QUEST"

@@ -36,7 +36,7 @@ namespace Quests_to_complete1
                 Console.WriteLine("Do you want edit or delete a quest?");//The user will be asked if he/she wants to modify the default set of quests. //The user will be supported with heaps of choices below
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter to put your quest.");
-                Console.WriteLine("You can also type 'exit' or click the 'X' button on the upper right panel if you want to quit the program.");
+                Console.Write("You can also type "); Console.ForegroundColor = ConsoleColor.Red;  Console.Write("'exit' "); Console.ForegroundColor = ConsoleColor.Green; Console.Write("if you want to quit the program.\n"); 
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("(if you close the program, all of the quests that you added will be removed)");
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -95,6 +95,12 @@ namespace Quests_to_complete1
                     if (commandanswer1 == "mainmenu")
                     {
                         Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("You will be moved to the main menu shortly.");
+                        Console.ResetColor();
+                        Console.WriteLine("(press any key to continue)");
+                        Console.ReadKey();   
+                        Console.Clear();
                         Lists();
                     }
                     else if (commandanswer1 == "delete")
@@ -138,6 +144,12 @@ namespace Quests_to_complete1
                     if (commandanswer1 == "mainmenu")
                     {
                         Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("You will be moved to the main menu shortly.");
+                        Console.ResetColor();
+                        Console.WriteLine("(press any key to continue)");
+                        Console.ReadKey();
+                        Console.Clear();
                         Lists();
                     }
                     else if (commandanswer1 == "delete")
@@ -177,6 +189,12 @@ namespace Quests_to_complete1
                     //
                     if (commandanswer1 == "mainmenu")
                     {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("You will be moved to the main menu shortly.");
+                        Console.ResetColor();
+                        Console.WriteLine("(press any key to continue)");
+                        Console.ReadKey();
                         Console.Clear();
                         Lists();
                     }
@@ -218,6 +236,12 @@ namespace Quests_to_complete1
                     if (commandanswer1 == "mainmenu")
                     {
                         Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("You will be moved to the main menu shortly.");
+                        Console.ResetColor();
+                        Console.WriteLine("(press any key to continue)");
+                        Console.ReadKey();
+                        Console.Clear();
                         Lists();
                     }
                     else if (commandanswer1 == "delete")
@@ -257,6 +281,12 @@ namespace Quests_to_complete1
                     //
                     if (commandanswer1 == "mainmenu")
                     {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("You will be moved to the main menu shortly.");
+                        Console.ResetColor();
+                        Console.WriteLine("(press any key to continue)");
+                        Console.ReadKey();
                         Console.Clear();
                         Lists();
                     }

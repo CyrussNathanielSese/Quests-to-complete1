@@ -63,9 +63,10 @@ namespace Quests_to_complete1
                 string c = "c";
                 string d = "d";
                 string e = "e";
-                
+                string exit = "exit";
+
                 //THE USER NEEDS TO TYPE THE EXACT LETTER OF THE QUEST IN ORDER TO GO TO THAT Quests'S COMMANDS//
-                while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e)
+                while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e && command1 != exit)
                 {
                     Console.WriteLine("(Please enter a valid letter)");
                     Console.Write("Command:"); command1 = Console.ReadLine().ToLower(); //THE USER WILL BE ASKED REPEATEDLY TO TYPE THE SPECIFIC LETTER OF QUEST"
@@ -80,15 +81,14 @@ namespace Quests_to_complete1
                     Console.Write("Quest A:"); Console.WriteLine(Quests[0] + "\n");
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("(comment 'delete' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on the first slot)");
-                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command)");
-
+                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string remove = "delete";
                     string edit = "edit";
-                    while (commandanswer1 != remove && commandanswer1 != edit)
+                    string backtomenu = "mainmenu";
+
+                    while (commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != backtomenu)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
@@ -114,15 +114,13 @@ namespace Quests_to_complete1
                     Console.Write("Quest B:"); Console.WriteLine(Quests[1] + "\n");
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("(comment 'delete' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on the first slot)");
-                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command)");
-
+                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string remove = "delete";
                     string edit = "edit";
-                    while (commandanswer1 != remove && commandanswer1 != edit)
+                    string backtomenu = "mainmenu";
+                    while (commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != backtomenu)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
@@ -150,15 +148,12 @@ namespace Quests_to_complete1
                     Console.Write("Quest C:"); Console.WriteLine(Quests[2] + "\n");
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("(comment 'delete' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on the first slot)");
-                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command)");
-
-                    Console.ResetColor();
+                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string remove = "delete";
                     string edit = "edit";
-                    while (commandanswer1 != remove && commandanswer1 != edit)
+                    string backtomenu = "mainmenu";
+                    while (commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != backtomenu)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
@@ -183,14 +178,13 @@ namespace Quests_to_complete1
                     Console.Write("Quest D:"); Console.WriteLine(Quests[3] + "\n");
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("(comment 'delete' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on the first slot)");
-                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command)");
+                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string remove = "delete";
                     string edit = "edit";
-                    while (commandanswer1 != remove && commandanswer1 != edit)
+                    string backtomenu = "mainmenu";
+                    while (commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != backtomenu)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
@@ -215,14 +209,13 @@ namespace Quests_to_complete1
                     Console.Write("Quest E:"); Console.WriteLine(Quests[4] + "\n");
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("(comment 'delete' if you want to delete the quest or comment 'edit' if you want to edit or replace the quest)\a");
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("(Note: You cannot go back to the main menu once you added a quest on the first slot)");
-                    Console.WriteLine("(What you can do to go back to the main menu is to carry on doing the command)");
+                    Console.WriteLine("(or if you want to go back to your quests, comment 'mainmenu'.)\n");
                     Console.ResetColor();
                     Console.Write("Command:"); string commandanswer1 = Console.ReadLine().ToLower();
                     string remove = "delete";
                     string edit = "edit";
-                    while (commandanswer1 != remove && commandanswer1 != edit)
+                    string backtomenu = "mainmenu";
+                    while (commandanswer1 != remove && commandanswer1 != edit && commandanswer1 != backtomenu)
                     {
                         Console.WriteLine("Please comment a valid command");
                         Console.Write("Command:"); commandanswer1 = Console.ReadLine().ToLower();
