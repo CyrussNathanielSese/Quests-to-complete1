@@ -50,7 +50,7 @@ namespace Quests_to_complete1
                 Console.WriteLine("Do you want to edit your Quests?");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter of the quest you want to edit or delete.");
-                Console.WriteLine("You can exit the program by clicking the 'X' in the upper right panel of the program.");
+                Console.WriteLine("You can exit the program by typing 'exit' in the command block.");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Note: ALL of your Quests will be deleted once you close the program.");
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -63,9 +63,10 @@ namespace Quests_to_complete1
                 string c = "c";
                 string d = "d";
                 string e = "e";
+                string exit = "exit";
 
                 //THE USER NEEDS TO TYPE THE EXACT LETTER OF THE QUEST IN ORDER TO GO TO THAT Quests'S COMMANDS//
-                while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e)
+                while (command1 != a && command1 != b && command1 != c && command1 != d && command1 != e && command1 != exit)
                 {
                     Console.WriteLine("(Please enter a valid letter)");
                     Console.Write("Command:"); command1 = Console.ReadLine().ToLower(); //THE USER WILL BE ASKED REPEATEDLY TO TYPE THE SPECIFIC LETTER OF QUEST"
@@ -293,9 +294,11 @@ namespace Quests_to_complete1
                     }
                 }
 
-
+                else if (command1 != exit)
+                {
+                    EXITPANEL Exit = new EXITPANEL();
+                }
             }
-
            
 
 

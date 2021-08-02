@@ -50,7 +50,7 @@ namespace Quests_to_complete1
                 Console.WriteLine("Do you want to edit your Quests?");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Type the letter of the quest you want to edit or delete.");
-                Console.WriteLine("You can exit the program by clicking the 'X' in the upper right panel of the program.");
+                Console.WriteLine("You can exit the program by typing 'exit' in the command block.");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Note: ALL of your Quests will be deleted once you close the program.");
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -103,6 +103,17 @@ namespace Quests_to_complete1
                         Console.Clear();
                         UpdatedQuests1 E1 = new UpdatedQuests1();
                     }
+                    else if (commandanswer1 == "mainmenu")
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("You will be moved to the main menu shortly.");
+                        Console.ResetColor();
+                        Console.WriteLine("(press any key to continue)");
+                        Console.ReadKey();
+                        Console.Clear();
+                        ListOfQuestsPANEL Panel1 = new ListOfQuestsPANEL();
+                    }
 
                 }
 
@@ -135,6 +146,17 @@ namespace Quests_to_complete1
                     {
                         Console.Clear();
                         UpdatedQuests2 E2 = new UpdatedQuests2();
+                    }
+                    else if (commandanswer1 == "mainmenu")
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("You will be moved to the main menu shortly.");
+                        Console.ResetColor();
+                        Console.WriteLine("(press any key to continue)");
+                        Console.ReadKey();
+                        Console.Clear();
+                        ListOfQuestsPANEL Panel1 = new ListOfQuestsPANEL();
                     }
 
                 }
@@ -169,6 +191,17 @@ namespace Quests_to_complete1
                         Console.Clear();
                         UpdatedQuests3 E3 = new UpdatedQuests3();
                     }
+                    else if (commandanswer1 == "mainmenu")
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("You will be moved to the main menu shortly.");
+                        Console.ResetColor();
+                        Console.WriteLine("(press any key to continue)");
+                        Console.ReadKey();
+                        Console.Clear();
+                        ListOfQuestsPANEL Panel1 = new ListOfQuestsPANEL();
+                    }
                 }
                 else if (command1 == "d")
                 {
@@ -199,6 +232,17 @@ namespace Quests_to_complete1
                     {
                         Console.Clear();
                         UpdatedQuests4 E4 = new UpdatedQuests4();
+                    }
+                    else if (commandanswer1 == "mainmenu")
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("You will be moved to the main menu shortly.");
+                        Console.ResetColor();
+                        Console.WriteLine("(press any key to continue)");
+                        Console.ReadKey();
+                        Console.Clear();
+                        ListOfQuestsPANEL Panel1 = new ListOfQuestsPANEL();
                     }
                 }
                 else if (command1 == "e")
@@ -231,9 +275,23 @@ namespace Quests_to_complete1
                         Console.Clear();
                         UpdatedQuests5 E5 = new UpdatedQuests5();
                     }
+                    else if (commandanswer1 == "mainmenu")
+                    {
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("You will be moved to the main menu shortly.");
+                        Console.ResetColor();
+                        Console.WriteLine("(press any key to continue)");
+                        Console.ReadKey();
+                        Console.Clear();
+                        ListOfQuestsPANEL Panel1 = new ListOfQuestsPANEL();
+                    }
                 }
 
-
+                else if (command1 != exit)
+                {
+                    EXITPANEL Exit = new EXITPANEL();
+                }
             }
 
 
